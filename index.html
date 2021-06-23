@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行列を用いた暗号作成</title>
+    <link rel="stylesheet" href="gyouretu-angou.css">
+</head>
+<body>
+    <h1>行列を用いた暗号作成</h1>
+    <a href="gyouretu-kaidoku.html">暗号を解読したい方はこちら</a>
+    <p>鍵となる行列を入力してください</p>
+    <p>※modは94です</p>
+    <input type ="text" id = "key1" class="mass" onInput="checkForm(this)">
+    <input type ="text" id = "key2" class="mass" onInput="checkForm(this)"></br>
+    <input type ="text" id = "key3" class="mass" onInput="checkForm(this)">
+    <input type ="text" id = "key4" class="mass" onInput="checkForm(this)">
+    
+
+    <p>変換したい文字列を入力してください</br>(日本語未対応)</p>
+    <input type ="text" id = "normal" class="mass2" pattern= "^[0-9A-Za-z]+$">　　<button id = "make" type = "button" class="button">変換</button></br></br></br>
+    暗号は<input type ="text" id = "final" class="mass2"></br></br>
+
+    <img src="https://www.sui-sai.jp/illust/2014/05/19/img/09.jpg" class="illust">
+    <script src = "gyouretu-angou.js"></script>
+</body>
+</html>
